@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax</title>
+    <style>
+        /* INHERITANCE: Properties of decendents are inherited from parent/grandparent etc...If you want to affect an elements of the entire document you can select the html or body element with css styling (form elements like button, input, textarea, select are exceptions to this, so you may see for example font:inherit to force these elements to inherit the property values of the parent element as you would expect from other properties) */
+
+        /*CASCADE: The browser reads from top to bottom and apply styles in that order (so if you have a .dark-background with one color early on in the document, and then again .dark-background with a different color further down, the browser will apply the later of the two).  Go from generic to specific to avoid problems */
+
+        /* SPECIFICITY: importance of selectors to determine application of styles.  element selectors (low specificity) class selector (medium specificity) id selector (highest specificity)
+
+        /* Creating Layouts: Learn both Flexbox and Grid (Positioning once you need more specific layouts) */
+
+        /* Separation of Concerns:  You can use CSS selectors to affect layout, but organize them in a way that you are not addressing both layout and styling in the same declaration. */
+
+
+        body {
+            color: rgb(235, 99, 41);
+            font-size: 1.25rem;
+        }
+        h1 {
+            color:blue;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>h1 { color:blue; }</h1>
+    <p>1. "h1 is the SELECTOR.</p>
+    <p>2. {} represents a CSS Style DECLARATION.</P>
+    <p>3. "color" or "text-align" are examples of a PROPERTY</p>
+    <p>4. "blue" or "center" are examples of a VALUE</p>
+    
+</body>
+</html>
